@@ -45,7 +45,7 @@ export default async  function Home() {
                 <Contact pageInfo={pageInfo}/>
             </section>
 
-            <footer className='sticky w-[10%] cursor-pointer bottom-20 md:bottom-14 ml-auto'>
+            <footer className='sticky w-[10%] cursor-pointer bottom-28 md:bottom-14 ml-auto'>
                 <div className='flex  items-center '>
                     <div className='bg-gray-500/30 hover:bg-yellow-500 rounded-full p-1 ml-auto mr-14 md:mr-10'>
                         <a href="#hero">

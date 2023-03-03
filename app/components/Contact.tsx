@@ -27,7 +27,7 @@ const Contact = ({pageInfo}:Props) => {
 
     return (
         <div className='relative h-screen flex flex-col text-center md:text-left md:flex-row mx-auto items-center
-        overflow-hidden justify-evenly md:justify-center md:gap-12 max-w-7xl px-10 z-0 pt-7'>
+        overflow-hidden justify-evenly md:justify-center md:gap-12 max-w-7xl px-10 z-0 pt-4 md:pt-7'>
             <h3 className="absolute top-14 md:top-18 pl-6 uppercase tracking-[20px]
             text-gray-500 text-sm md:text-2xl leading-8 ">Контакты</h3>
             <Image className='hidden md:block pt-2 rounded-2xl' src='/manager.jpg' alt='manager' width={310} height={430}/>
