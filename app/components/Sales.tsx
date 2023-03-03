@@ -19,7 +19,7 @@ const Sales = ({sale}:Props) => {
 
             <div className='relative w-full flex overflow-x-scroll overflow-y-hidden
             snap-x snap-mandatory z-20 scrollbar scrollbar-thumb-[#F7AB0A]
-            scrollbar-thumb-rounded-md h-[90%]'>
+            scrollbar-thumb-rounded-md h-[80%]'>
                 {sale.map(sal => (
                         <div key={sal._id} className='w-screen flex-shrink-0 snap-center
                         flex flex-col space-y-4 items-center justify-center

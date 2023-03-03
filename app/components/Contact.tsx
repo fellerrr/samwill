@@ -27,7 +27,7 @@ const Contact = ({pageInfo}:Props) => {
 
     return (
         <div className='relative h-screen flex flex-col text-center md:text-left md:flex-row mx-auto items-center
-        overflow-hidden justify-evenly md:justify-center md:gap-12 max-w-7xl px-10 z-0 pt-10'>
+        overflow-hidden justify-evenly md:justify-center md:gap-12 max-w-7xl px-10 z-0 pt-7'>
             <h3 className="absolute top-14 md:top-18 pl-6 uppercase tracking-[20px]
             text-gray-500 text-sm md:text-2xl leading-8 ">Контакты</h3>
             <Image className='hidden md:block pt-2 rounded-2xl' src='/manager.jpg' alt='manager' width={310} height={430}/>
@@ -37,8 +37,8 @@ const Contact = ({pageInfo}:Props) => {
                 </h4>
                 <div className='space-y-2'>
                     <div>
-                        {/*<a href="tel:+79110962368">*/}
-                        <a href="tel:{{pageInfo.phoneNumber}}">
+                        <a href="tel:+79110962368">
+                        {/*<a href="tel:{{pageInfo.phoneNumber}}">*/}
                             <div className='flex items-center space-x-5 justify-center'>
                                 <PhoneIcon className='h-7 w-7 text-[#F7AB0A] animate-pulse'/>
                                 <p className='text-base'>{pageInfo.phoneNumber}</p>
@@ -46,7 +46,7 @@ const Contact = ({pageInfo}:Props) => {
                         </a>
                     </div>
                     <div>
-                        <a href="mailto:{{pageInfo.email}}">
+                        <a href="mailto:ecoznov@yandex.ru">
                             <div className='flex items-center space-x-5 justify-center '>
                                 <EnvelopeIcon className='h-7 w-7 text-[#F7AB0A] animate-pulse'/>
                                 <p className='text-base'>{pageInfo.email}</p>
