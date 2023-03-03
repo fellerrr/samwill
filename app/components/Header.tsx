@@ -1,8 +1,7 @@
-// noinspection HtmlUnknownAnchorTarget
+
 "use client"
 import React from 'react';
 import {motion} from "framer-motion";
-import Link from "next/link";
 import {SocialIcon} from "react-social-icons";
 import {EnvelopeIcon} from "@heroicons/react/24/outline";
 import { Social } from '@/typings';
@@ -34,8 +33,8 @@ const Header = ({socials}:Props) => {
                     />
                 )}
             </motion.div>
-            {/*<Link href='#contact'>*/}
-            <Link href='#'>
+            <a href='#contact'>
+            {/*<Link href='#'>*/}
                 <motion.div
                     initial={{x: 500, opacity: 0, scale: 0.5}}
                     animate={{x: 0, opacity: 1, scale: 1}}
@@ -45,7 +44,7 @@ const Header = ({socials}:Props) => {
                     <EnvelopeIcon className=' h-7 w-7 cursor-pointer text-gray-400 '/>
                     <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Get in touch</p>
                 </motion.div>
-            </Link>
+            </a>
         </header>
     );
 };

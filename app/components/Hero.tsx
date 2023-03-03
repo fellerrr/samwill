@@ -1,6 +1,5 @@
 "use client"
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
-import Link from "next/link";
 import BackgroundCircles from './BackgroundCircles';
 import { PageInfo } from '@/typings';
 import { urlFor } from '@/lib/sanity.client';
@@ -48,28 +47,30 @@ const Hero = ({pageInfo}:Props) => {
                 </div>
 
                 <div className='mt-4 pt-5'>
-                    {/*<Link href='#about'>*/}
-                    <Link href='#'>
+                    <a href="#about">
+                    {/*<Link href='#'>*/}
                         <button className="heroButton">О компании</button>
-                    </Link>
-                    {/*<Link href='#demand'>*/}
-                    <Link href='#'>
+                    </a>
+                    <a href='#demand'>
+                    {/*<Link href='#'>*/}
                         <button className="heroButton">Мы предлагаем</button>
-                    </Link>
-                    {/*<Link href='#advantages'>*/}
-                    <Link href='#'>
+                    </a>
+                    <a href='#advantages'>
+                    {/*<Link href='#'>*/}
                         <button className="heroButton">Преимущества</button>
-                    </Link>
-                    {/*<Link href='#sale'>*/}
-                    <Link href='#'>
+                    </a>
+                    <a href='#sale'>
+                    {/*<Link href='#'>*/}
                         <button className="heroButtonSale italic
                             text-[#FF580B] text-base bg-[#242424]">Акции %</button>
-                    </Link>
+                    </a>
 
                 </div>
 
             </div>
         </div>
+
+
 
     );
 };
